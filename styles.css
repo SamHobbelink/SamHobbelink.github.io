@@ -1,0 +1,280 @@
+/* General */
+body {
+    background: rgb(205, 223, 255);
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+section {
+    background: rgb(205, 223, 255);
+}
+h2 {
+    color: black;
+    text-align: center;
+    margin: 50px 0px 5px 0px;
+    font-size: 1.8rem;
+}
+h3 {
+    color: black;
+    text-align: center;
+    margin: 30px 0px 5px 0px;
+    font-size: 1.4rem;
+}
+figure figcaption {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer {
+    background: rgb(138, 156, 255);
+    padding: 40px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.label {
+    font-weight: bold;
+}
+
+/* Header & Nav */
+header {
+    background: rgb(138, 156, 255);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+header h2 {
+    color: white;
+    margin: 2px 0 20px 0;
+}
+header .logo a {
+    display: inline-block;
+    background-image: url("images/logotransparentnotext.png");
+    background-size: 150px;
+    width: 150px;
+    height: 150px;
+    text-indent: -99999px;
+    background-color: rgb(138, 156, 255);
+    position: relative;
+    left: 17px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+}
+.navbutton a {
+    position: relative;
+    top: 40px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(123, 136, 252);
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.navbutton a:hover {
+    background-color: rgb(135, 137, 255);
+}
+.navbutton a:visited {
+    color: white;
+}
+.navbutton a:active {
+    background-color: rgb(72, 40, 255);
+}
+
+/* Home: Intro section */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.intro figure {
+    flex-shrink: 0;
+    max-width: 300px;
+}
+.intro p {
+    font-size: 1.3rem;
+}
+.intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgb(138, 156, 255) 5px 5px 10px;
+}
+
+/* Home: Featured tab */
+.features {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 40px;
+}
+.features figure {
+    width: 400px;
+}
+.features figure img {
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: rgb(138, 156, 255) 10px 10px 10px;
+    transition: transform 0.3s ease;
+}
+.features figure figcaption {
+    padding-top: 5px;
+    font-weight: bold;
+    font-style: normal;
+}
+.features img:hover {
+    transform: scale(1.05);
+}
+.features a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+.features a:visited {
+    color: black;
+}
+
+/* About me: Main text */
+.explanation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.explanation p {
+    max-width: 1000px;
+    font-size: 1.4rem;
+    padding-right: 50px;
+}
+.explanation figure img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Contact info: Main text */
+.contactintro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactintro p {
+    max-width: 1000px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.contactinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.contactdata p {
+    max-width: 1000px;
+    font-size: 1.3rem;
+    padding-left: 100px;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-right: 250px;
+}
+.socials figure {
+    margin: 0;
+}
+.socials figure img {
+    width: 75px;
+}
+.socials a {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+.socials a:hover {
+    transform: scale(1.1);
+}
+
+/* Portfolio page */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+.projects figure {
+    text-align: center;
+}
+.projects img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: rgb(138, 156, 255) 10px 10px 10px;
+}
+.projects img:hover {
+    transform: scale(1.05);
+}
+.projects figcaption {
+    font-style: normal;
+    margin-top: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.projects a {
+    font-style: normal;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Individual project pages */
+.project-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+}
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    padding: 50px;
+}
+.project-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: rgb(138, 156, 255) 10px 10px 10px;
+}
+.project-description a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+.project-description a:visited {
+    color: black;
+}
